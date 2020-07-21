@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url("../../node_modules/bootstrap/dist/css/bootstrap.css");
+@import url("../../node_modules/@fortawesome/fontawesome-free/css/all.css");
+
+/* Imports de css prórpios */
+
+@import url("./home.css");
+@import url("./forms.css");
+@import url("./icons-styles.css");
+@import url("./mobile.css");
+
+/* Estilos gerais */
+
+* {
+    /* FONTE GLOBAL */
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: rgb(250, 253, 255);
+}
+
+.matt-center {
+    margin: 0 auto;
+    text-align: center;
+}

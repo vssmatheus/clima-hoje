@@ -1,0 +1,15 @@
+.matt-title-home {
+    font-weight: bolder;
+    font-size: 60px;
+    background: -webkit-linear-gradient(left, rgb(120, 212, 255) 0%, rgb(0, 75, 145) 100%);
+    background: linear-gradient(to right, rgb(0, 60, 255) 10%, rgb(21, 236, 190) 75%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.matt-subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    color: gray;
+}
