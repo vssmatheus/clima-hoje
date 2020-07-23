@@ -8,13 +8,13 @@
     -webkit-text-fill-color: transparent;
 }
 
-
-/* .matt-icon-sol-nuvem {
-    font-size: 100px;
+.matt-icon-sol-nuvem {
+    float: right;
+    font-size: 120px;
     margin: 10px;
     background: -webkit-linear-gradient(left, rgb(120, 212, 255) 0%, rgb(0, 75, 145) 100%);
     background: linear-gradient(to right, rgb(0, 60, 255) 10%, rgb(21, 236, 190) 75%);
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-} */
+}
