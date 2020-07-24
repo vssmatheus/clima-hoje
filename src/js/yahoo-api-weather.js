@@ -2,7 +2,8 @@
 // Requires: jQuery and crypto-js (v3.1.9)
 // 
 // Copyright 2019 Oath Inc. Licensed under the terms of the zLib license see https://opensource.org/licenses/Zlib for terms.
-
+/* https://www.youtube.com/watch?v=f__x1VofV2Q */
+/* VIDEO ^ */
 var url = 'https://weather-ydn-yql.media.yahoo.com/forecastrss';
 var method = 'GET';
 var app_id = 'your-app-id';

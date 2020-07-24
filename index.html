@@ -23,10 +23,21 @@
                     <h1 class="matt-title-home">Clima Hoje</h1>
                     <p class="matt-subtitle">Olá, Saiba como está o clima em sua cidade hoje também e nos próximos dias :)</p>
                     <br>
-                    <span class="matt-icon-lupa matt-btn-null">
-                        <i class="fas fa-search"></i>
-                    </span>
-                    <input type="text" placeholder="Qual a sua cidade?" class="matt-input">
+                    <div class="submit-line">
+                        <input type="text" placeholder="Qual a sua cidade?" class="matt-input">
+                        <button class="submit-lente" style="outline: none;">  <!-- matt-icon-lupa matt-btn-null -->
+                            <i class="fas fa-search matt-icon-lupa"></i>
+                        </button>
+                    </div>
+
+                    <!-- ICONE DENTRO DO INPUT -->
+                    <!-- <div class="submit-line">
+                        <input type="text" />
+                        <button class="submit-lente" type="submit">
+                          <i class="fa fa-search"></i>
+                        </button>
+                    </div> -->
+
                 </div>
             </div>
             <!-- CARD DE INFORMAÇÕES DE CLIMA -->
@@ -38,12 +49,34 @@
                             <div class="col">
                                 <h4 class="nome-cidade">Maurilândia-GO</h4>
                                 <span class="temperatura">26°C</span><br>
-                                <span class="horario"><strong>12:34 hrs</strong> - Brasília</span>
+                                <!-- <span class="horario"><strong>12:34 hrs</strong> - Brasília</span> -->
                             </div>
-                            <div class="col">
+                            <div class="col col-1" style="margin-top: -15px;">
                                 <span class="matt-icon-sol-nuvem">
                                     <i class="fas fa-cloud-sun"></i>
                                 </span>
+                            </div>
+                        </div>
+                        <!-- LINHA 02 -->
+                        <div class="row">
+                            <div class="col">
+                                <span><i class="fas fa-thermometer-half"></i></span>
+                                <span>26° ST</span>
+                            </div>
+                            <div class="col">
+                                <span><i class="fas fa-wind"></i></span>
+                                <span>6 Km/h</span>
+                            </div>
+                        </div>
+                        <!-- LINHA 03 -->
+                        <div class="row">
+                            <div class="col">
+                                <span><i class="fas fa-tachometer-alt"></i></span>
+                                <span>1017 hPa</span>
+                            </div>
+                            <div class="col">
+                                <span><i class="fas fa-tint"></i></span>
+                                <span>65% UR</span>
                             </div>
                         </div>
                     </div>
@@ -52,9 +85,9 @@
             <br><br>
             <!-- FIM CARD DE INFORMAÇÕES DE CLIMA -->
             <div class="container">
-                <div class="content-nav">
-                    <h2 class="matt-justify-container" style="color:rgb(90, 90, 90);">Previsão do tempo</h2>
-                    <p class="conteudo-em-texto">A previsão do tempo é um estudo baseado em dados de diferentes áreas, como a visualização do céu e análise da formação de nuvens, a temperatura observada, a pressão atmosférica, até ao uso de imagens de radar Doppler, balões atmosféricos,
+                <div class="conteudo-em-texto">
+                    <h2 class="" style="color:rgb(90, 90, 90);">Previsão do tempo</h2>
+                    <p class="">A previsão do tempo é um estudo baseado em dados de diferentes áreas, como a visualização do céu e análise da formação de nuvens, a temperatura observada, a pressão atmosférica, até ao uso de imagens de radar Doppler, balões atmosféricos,
                         bóias marítimas, estações meteorológicas etc.</p>
                 </div>
             </div>

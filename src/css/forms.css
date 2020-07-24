@@ -1,3 +1,22 @@
+.submit-lente {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    border: none;
+    background: transparent;
+    outline: none;
+    margin-right: 2px;
+}
+
+.submit-line {
+    position: relative;
+}
+
+.submit-line input {
+    width: 100%;
+}
+
 .matt-input[type=text] {
     border-radius: 50px;
     -moz-border-radius: 50px;
@@ -9,7 +28,7 @@
     background: #ffffff;
     border: 0 solid #000000;
     height: 45px;
-    width: 65%
+    width: 100%
 }
 
 .matt-input[type=text]:focus {

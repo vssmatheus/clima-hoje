@@ -1,0 +1,35 @@
+@media screen and (max-width: 1024px) {
+    .content-nav {
+        width: 95%;
+    }
+    .matt-card-padrao {
+        width: 95%;
+    }
+    .matt-title-home {
+        font-size: xx-large;
+    }
+    .matt-icon-sol-nuvem {
+        float: right;
+        font-size: 36px;
+        margin: 0;
+        padding: 0;
+    }
+    .nome-cidade {
+        font-size: 16px;
+        font-weight: 700;
+        color: rgb(95, 95, 95);
+    }
+    .matt-justify-container {
+        margin: 25px;
+        padding-top: 10px;
+    }
+    .conteudo-em-texto {
+        margin: 10px;
+        font-size: 20px;
+        color: rgb(90, 90, 90);
+    }
+    /* forms */
+    .matt-input[type=text] {
+        width: 100%
+    }
+}
