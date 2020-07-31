@@ -2,7 +2,7 @@ class UI {
     constructor() {
         this.uiContainer = document.getElementById("content");
         this.city;
-        this.defaultCity = "London";
+        this.defaultCity = "goiania";
     }
 
     populateUI(data) {
@@ -86,7 +86,7 @@ class Fetch {
         //make request to url
 
         const response = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&appid=${myKey}&lang=pt_br`
+            `https://api.openweathermap.org/data/2.5/weather?q=${input},pt_br&units=metric&appid=${myKey}&lang=pt_br`
         );
 
         const data = await response.json();
