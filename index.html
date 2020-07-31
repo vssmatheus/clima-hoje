@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="en">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css" />
 
 <head>
     <!-- METAS -->
@@ -7,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- LINKS -->
     <link rel="stylesheet" href="./src/css/styles.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
     <!-- SCRIPTS -->
-    <script src="./src/js/yahoo-api-weather.js"></script>
+    <!-- <script src="./src/js/yahoo-api-weather.js"></script> -->
     <!-- TÍTULO DA PÁGINA -->
     <title>Clima Hoje</title>
 </head>
@@ -18,17 +20,20 @@
         <div class="container">
             <!-- CARD DE TÍTULO E BUSCA DE CIDADES -->
             <div class="content-nav">
-                <div class="matt-center">
+                <div class="matt-center searchContaine">
                     <br><br>
                     <h1 class="matt-title-home">Clima Hoje</h1>
                     <p class="matt-subtitle">Olá, Saiba como está o clima em sua cidade hoje também e nos próximos dias :)</p>
                     <br>
                     <div class="submit-line">
-                        <input type="text" placeholder="Qual a sua cidade?" class="matt-input">
-                        <button class="submit-lente" style="outline: none;">  <!-- matt-icon-lupa matt-btn-null -->
+                        <input type="text" id="searchUser" placeholder="Qual a sua cidade?" class="form-control matt-input">
+                        <button class="submit-lente" id="submit" style="outline: none;">  <!-- matt-icon-lupa matt-btn-null -->
                             <i class="fas fa-search matt-icon-lupa"></i>
                         </button>
                     </div>
+
+                    <!-- <button class="btn btn-prmary" id="submit">submit</button> -->
+
 
                     <!-- ICONE DENTRO DO INPUT -->
                     <!-- <div class="submit-line">
@@ -42,45 +47,8 @@
             </div>
             <!-- CARD DE INFORMAÇÕES DE CLIMA -->
             <div class="matt-card-padrao">
-                <div class="container">
-                    <div class="matt-justify-container">
-                        <!-- LINHA 01 -->
-                        <div class="row">
-                            <div class="col">
-                                <h4 class="nome-cidade">Maurilândia-GO</h4>
-                                <span class="temperatura">26°C</span><br>
-                                <!-- <span class="horario"><strong>12:34 hrs</strong> - Brasília</span> -->
-                            </div>
-                            <div class="col col-1" style="margin-top: -15px;">
-                                <span class="matt-icon-sol-nuvem">
-                                    <i class="fas fa-cloud-sun"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- LINHA 02 -->
-                        <div class="row">
-                            <div class="col">
-                                <span><i class="fas fa-thermometer-half"></i></span>
-                                <span>26° ST</span>
-                            </div>
-                            <div class="col">
-                                <span><i class="fas fa-wind"></i></span>
-                                <span>6 Km/h</span>
-                            </div>
-                        </div>
-                        <!-- LINHA 03 -->
-                        <div class="row">
-                            <div class="col">
-                                <span><i class="fas fa-tachometer-alt"></i></span>
-                                <span>1017 hPa</span>
-                            </div>
-                            <div class="col">
-                                <span><i class="fas fa-tint"></i></span>
-                                <span>65% UR</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div id="profile"></div>
+                <div id="content"></div>
             </div>
             <br><br>
             <!-- FIM CARD DE INFORMAÇÕES DE CLIMA -->
@@ -94,8 +62,13 @@
         </div>
     </div>
 </body>
-<script src="./src/js/bootstrap.js"></script>
-<script src="./src/js/jquery.js"></script>
-<script src="./src/js/popper.js"></script>
+<!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.js.map"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
+<!-- <script src="./src/js/jquery.js"></script>
+<script src="./src/js/popper.js"></script> -->
+<!-- <script src="./src/js/yahoo-api-weather.js"></script> -->
+<script src="src/js/weather-api/app.js"></script>
+<!-- <script src="src/js/weather-api/fetch.js"></script>
+<script src="src/js/weather-api/ui.js"></script> -->
 
 </html>
