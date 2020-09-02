@@ -1,0 +1,23 @@
+.more-info{
+    margin: 7px;
+    font-size: 16pt;
+}
+.icon-info{
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-right: 15px;
+    color: rgb(95, 95, 95);
+}
+.status-text{
+    width: 50%;
+    align-self: center;
+}
+.card-text{
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bold;
+    color: rgb(29, 134, 204);
+    margin: 0 auto;
+}

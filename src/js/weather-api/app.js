@@ -2,7 +2,7 @@ class UI {
     constructor() {
         this.uiContainer = document.getElementById("content");
         this.city;
-        this.defaultCity = "goiania";
+        this.defaultCity = "brasilia";
     }
 
     populateUI(data) {
@@ -11,7 +11,8 @@ class UI {
         //add them to inner HTML
 
         this.uiContainer.innerHTML = `
-
+        <link rel="stylesheet" href="../../src/css/infos.css">
+        <link rel="stylesheet" href="../../src/css/mobile.css">
         <div class="container">
                     <div class="matt-justify-container">
                         
@@ -30,27 +31,29 @@ class UI {
                         
                         <div class="row">
                             <div class="col more-info">
-                                <span><i class="fas fa-thermometer-half"></i></span>
+                                <span><i class="icon-info fas fa-thermometer-half"></i></span>
                                 <span>${data.main.temp} ST</span>
                             </div>
                             <div class="col more-info">
-                                <span><i class="fas fa-wind"></i></span>
+                                <span><i class="icon-info fas fa-wind"></i></span>
                                 <span>${data.wind.speed} Km/h</span>
                             </div>
                         </div>
                         
                         <div class="row">
                             <div class="col more-info">
-                                <span><i class="fas fa-tachometer-alt"></i></span>
+                                <span><i class="icon-info fas fa-tachometer-alt"></i></span>
                                 <span>${data.main.pressure} hPa</span>
                             </div>
                             <div class="col more-info">
-                                <span><i class="fas fa-tint"></i></span>
+                                <span><i class="icon-info fas fa-tint"></i></span>
                                 <span>${data.main.humidity}% UR</span>
                             </div>
                         </div>
                     </div>
-                    <p class="card-text ">Status: ${data.weather[0].description}</p>
+                    <div class="container status-text">
+                        <p class="card-text">Status: ${data.weather[0].description}</p>
+                    </div>                    
                 </div>      
         
         `;

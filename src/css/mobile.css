@@ -32,4 +32,33 @@
     .matt-input[type=text] {
         width: 100%
     }
+
+    /* STYLES INFOS  */
+
+    .more-info{
+        margin: 7px;
+        font-size: 10pt;
+    }
+    .icon-info{
+        text-align: center;
+        justify-self: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-right: 24px;
+        color: rgb(95, 95, 95);
+    }
+    .status-text{
+        width: 80%;
+        align-self: center;
+    }
+    .card-text{
+        text-align: center;
+        font-size: 12pt;
+        font-weight: bold;
+        color: #0880E6;
+        margin: 0 auto;
+    }
+    .temperatura{
+        font-size: auto;
+    }
 }
