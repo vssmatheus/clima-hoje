@@ -94,6 +94,11 @@ class Fetch {
 
         const data = await response.json();
 
+        if (response.status == 404) {
+            console.log("CIDADE NÃO ENCONTRADA");
+            alert("Ops! A cidade solicitada, não consta em nosso banco de dados :(");
+        }
+
         console.log(data);
 
         return data;
